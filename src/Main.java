@@ -3,7 +3,9 @@
 public class Main {
     public static void main(String[] args) {
         double amountCredit = 1_000_000; //сумма кредита
-        double percent = 9.99; //процентная ставка
+        double percentAmount = 9.99; //процентная ставка
+        double percent = percentAmount * 0.01; //процентная ставка в десятичном значении
+
 
         //1. Расчёт суммы ежемесячного платежа при сроке кредита - 12 месяцев
         int periodOneYear = 12; //срок кредита в месяцах
