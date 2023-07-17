@@ -2,9 +2,9 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
+
         double amountCredit = 1_000_000; //сумма кредита
-        double percentAmount = 9.99; //процентная ставка
-        double percent = percentAmount * 0.01; //процентная ставка в десятичном значении
+        double percent = 9.99; //процентная ставка
 
 
         //1. Расчёт суммы ежемесячного платежа при сроке кредита - 12 месяцев
@@ -12,7 +12,7 @@ public class Main {
         CreditPaymentService monthlyPayment = new CreditPaymentService(); //вызов метода расчёта суммы кредита
         double amountOne = monthlyPayment.calculate(percent, periodOneYear, amountCredit);
         System.out.println("Сумма ежемесячного платежа при сроке кредита: " + periodOneYear + " месяцев");
-        System.out.println(amountOne); //Вывод расчётов
+        System.out.println(amountOne + " росс.руб."); //Вывод расчётов
         System.out.println(" ");
 
         //2. Расчёт суммы ежемесячного платежа при сроке кредита - 24 месяцев
@@ -20,7 +20,7 @@ public class Main {
         CreditPaymentService monthlyPaymentTwo = new CreditPaymentService(); //вызов метода расчёта суммы кредита
         double amountTwo = monthlyPaymentTwo.calculate(percent, periodTwoYears, amountCredit);
         System.out.println("Сумма ежемесячного платежа при сроке кредита: " + periodTwoYears + " месяца");
-        System.out.println(amountTwo); //Вывод расчётов
+        System.out.println(amountTwo + " росс.руб."); //Вывод расчётов
         System.out.println(" ");
 
         //3. Расчёт суммы ежемесячного платежа при сроке кредита - 36 месяцев
@@ -28,7 +28,7 @@ public class Main {
         CreditPaymentService monthlyPaymentThree = new CreditPaymentService(); //вызов метода расчёта суммы кредита
         double amountThree = monthlyPaymentTwo.calculate(percent, periodThreeYears, amountCredit);
         System.out.println("Сумма ежемесячного платежа при сроке кредита: " + periodThreeYears + " месяцев");
-        System.out.println(amountThree); //Вывод расчётов
+        System.out.println(amountThree + " росс.руб."); //Вывод расчётов
 
     }
 }
